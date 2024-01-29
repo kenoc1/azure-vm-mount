@@ -4,12 +4,6 @@ param (
   [string]$storageAccountKeys
 )
 
-param (
-  [string]$storageAccountName,
-  [string]$fileShareName,
-  [string]$storageAccountKeys
-)
-
 $connectTestResult = Test-NetConnection -ComputerName $("$storageAccountName.file.core.windows.net") -Port 445
 
 if ($connectTestResult.TcpTestSucceeded) {
