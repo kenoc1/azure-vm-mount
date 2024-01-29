@@ -1,6 +1,6 @@
 param (
-  [string]$storageAccountName
-  [string]$fileShareName
+  [string]$storageAccountName,
+  [string]$fileShareName,
   [string]$storageAccountKeys
 )
 
